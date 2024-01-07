@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+                <div class="container">
+                    <nav class="nav-bar">
+                        <a href="http://192.168.1.242:5500/#">
+                            <img width="57px" height="17px" src="./img/header-log/LOGO 1 (1).svg" alt="logo">
+                        </a>    
+        
+                        <div class="name-monkey">
+                            <img src="./img/header-log/20544442431551942822 1.svg" alt="logo">
+                            <h2>Yana Tamkovich</h2>
+                        </div>
+        
+                            <div class="search-bar">
+                                <i class="bi bi-search"></i>
+                                <input type="text" id="searchInput" onchange="handleSearch()" placeholder="Yana Tamkovich">
+                            </div>
+        
+                        <div class="icons">
+                            <i class="bi bi-heart"></i>
+                            <i onclick="renderKorzinka(cartData)" class="bi bi-handbag"></i>
+                            <span id="null">0</span>
+
+                        </div>
+        
+                        <!-- Mobile Toggle Button -->
+                        <button class="mobile-toggle-btn" onclick="toggleMobileMenu()">
+                            <i class="bi bi-list"></i>
+                        </button>
+                    </nav>
+                    
+        </div>
+    </header>
+
+    <section class="category">
+        <div class="container">
+            <div class="category-block">
+            <div class="list-block">
+                <h2>CATEGORIES</h2>
+                <ul class="list">
+
+                </ul>
+            </div>
+
+            
+            <div class="box-sale productsBlock" id="korzinka" >
+                <div class="sale-21">
+                   <p>BIG SALE 20%</p>
+                </div> 
+                
+                <div class="lennon">
+                    <p>the bestseller of 2022 </p>
+                    <h3>LENNON r2d2<br/>
+                        with NVIDIA 5090 TI</h3>
+                        <button class="shopbtn">Shop Now</button>
+                        
+                </div>
+                
+                        <div class="lennon-root" >
+                            <img width="362px" height="252px" src="./img/Sale-box/image 1.svg">
+                        </div>
+
+                        <div class="korzinka" id="korzinka"></div>
+                        <div class="productsBlock"></div>
+                        <div class="searchBlock"></div>
+            </div>
+        </div>
+
+        <div class="trendin-list">
+                <h4>Trending</h4>
+            
+             <div class="trending">
+               
+             </div>
+    
+        </div>
+
+
+        <div class="new-yearsale">
+            <div class="year-sales">
+                <h2>NEW YEAR</h2>
+                <h1>Sale</h1>
+                
+                <button>See more</button>
+                <div class="year-salesimg">
+                    <span class="boots"><img width="100px" height="100px" src="./img/Sale-box/image 4.svg" alt=""></span>
+                    <span class="play"><img width="100px" height="100px" src="./img/Sale-box/image 3.svg" alt=""></span>
+                </div>
+            </div>
+
+            <div class="santa">
+                <img src="./img/Sale-box/Rectangle 14.svg" alt="">
+            </div>
+
+            
+
+        </div>
+
+
+        <div class="less">
+            <h4>Less than 100$</h4>
+            <div class="less-list-block">
+            <div class="less_list">
+                
+            </div>
+        </div>
+            <button>See more</button>
+        </div>
+
+    </div>
+    </section>
+
+   <footer>
+        <div class="container">
+            <div class="footer">
+            <a class="tuff-footer" href="#">
+                <img width="57px" height="17px" src="./img/header-log/LOGO 1 (1).svg" alt="logo">
+            </a>
+
+            <a class="devel" href="#">Developed by <span class="tomkovich">Tomkovich</span></a>
+
+            <div class="social">
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+            </div>
+        </div>
+   </footer>
+                  
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
